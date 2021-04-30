@@ -26,7 +26,7 @@ SECRET_KEY = 'ez(2shqrmwt$hbdhuk#*12yu-8pdvee!nq6t&u^b9-_#fk09z)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['clamor-in.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'clamor_app.apps.ClamorAppConfig'
+    'clamor_app.apps.ClamorAppConfig',
+    'django_filters',
+    'storages',
 ]
 
 MIDDLEWARE = [
