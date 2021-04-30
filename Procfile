@@ -1,0 +1,1 @@
+web: gunicorn clamor_in.wsgi --log-file -
