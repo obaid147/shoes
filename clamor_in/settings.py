@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'ez(2shqrmwt$hbdhuk#*12yu-8pdvee!nq6t&u^b9-_#fk09z)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['clamor-in.herokuapp.com']
 
