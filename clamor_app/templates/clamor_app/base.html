@@ -1,16 +1,31 @@
 {% load static %}
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link  rel="icon" href="{% static 'images/favicon.ico' %}">
+
     <style type="text/css">
         body {
              background: #23074d;  /* fallback for old browsers */
              background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
              background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             }
+
+        /* Media Queries: Tablet Landscape */
+        @media screen and (max-width: 1060px) {
+            #primary { width:67%; }
+            #secondary { width:30%; margin-left:3%;}
+        }
+
+        /* Media Queries: Tabled Portrait */
+        @media screen and (max-width: 768px) {
+            #primary { width:100%; }
+            #secondary { width:100%; margin:0; border:none; }
+        }
 
     </style>
 </head>
